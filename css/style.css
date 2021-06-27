@@ -5,7 +5,7 @@ html{
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #333136;
     width: 80%;
     margin: 0 auto;
@@ -19,37 +19,76 @@ h1 {
     font-family: 'Libre Baskerville', sans-serif;
     font-size: 80px;
     padding: 20px;
+    text-align: center;
 }
 
 h2 {
     font-family: 'Libre Baskerville', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     padding: 10px;
 }
 
 figcaption {
     font-style: italic;
     color: #635f69;
+    text-align: center;
+}
+
+/* Phone text config */
+@media (max-width: 350px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
 }
 
 
-/* Ironwood pic config */
-#img-div {
+/* Ironwood design gallery config */
+
+#ironwood-gallery {
     display: inline-flex;
-    justify-items: space-evenly;
-    width: 100%
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 100%;
+    
 }
 
-img {
+#gallery-pic {
     width: 150px; 
     height: 300px;
     border-radius: 5%;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-img:hover {
+#gallery-pic:hover {
     box-shadow: 0px 0px 15px rgba(29,36,75,0.25);
 }
 
+
+figure {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+figure figcaption {
+    display: block;
+    width: 150px;
+    padding: 5px;
+} 
+
+/* Ironwood with a gun config */
+
+#chadwood {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+#chadwood:hover {
+    box-shadow: 0px 0px 50px rgba(29,36,75,0.25);
+}
