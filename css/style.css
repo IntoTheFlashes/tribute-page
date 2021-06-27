@@ -81,7 +81,7 @@ figure figcaption {
 
 /* Ironwood with a gun config */
 
-#chadwood {
+#image {
     display: block;
     margin: 20px auto;
     border-radius: 5%;
@@ -89,6 +89,6 @@ figure figcaption {
     height: auto;
 }
 
-#chadwood:hover {
+#image:hover {
     box-shadow: 0px 0px 50px rgba(29,36,75,0.25);
 }
